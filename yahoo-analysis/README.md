@@ -14,3 +14,16 @@ Yahoo failed to implement unique **salting**. A salt is a random string concaten
 *   **Without Salts:** If User A and User B both used the password `password123`, their database records would display the exact same MD5 string: `482c811da5d5b4bc6d497ffa98491e38`.
 *   **The Result:** Attackers could identify patterns across millions of users instantly. They could crack one hash and instantly compromise every single account utilizing that exact password string.
 
+#### 📉 Architectural Timeline & Neglect
+
+| Metric / Event | Detail |
+| :--- | :--- |
+| **Total Impact** | 3 Billion user accounts compromised |
+| **Primary Vectors** | Broken cryptographic primitives (MD5) and forged session cookies |
+| **Systemic Failure** | Architectural inertia—failing to migrate active databases to slow, adaptive hashing algorithms like **bcrypt** or **Argon2id**. |
+
+## 💡 Engineering Safeguards
+To secure user stores against this class of vulnerability, modern software architectures must enforce:
+1.  **Adaptive Cryptographic Primitives:** Employ hashing functions with configurable work factors (e.g., `bcrypt`, `scrypt`, `Argon2id`) to intentionally throttle hardware speeds, making brute-force math computationally expensive.
+2.  **Per-User Cryptographic Salting:** Generate cryptographically secure pseudo-random salts for every unique record. Even identical plaintext inputs must yield wildly distinct database strings.
+
