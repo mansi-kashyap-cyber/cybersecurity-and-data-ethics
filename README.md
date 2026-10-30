@@ -2,7 +2,7 @@
 Technical analysis and open-source tools exploring structural data breaches and algorithmic privacy flaws.
 # Cybersecurity & Data Ethics Research Hub
 
-Welcome to my research hub. As a student exploring the intersection of AI, cybersecurity, and data ethics, I analyze historic system failures to understand how technical architectures fail the people they serve. 
+Welcome to my research and development hub. As a student exploring the intersection of artificial intelligence, system architecture, and cybersecurity, I build tracking tools and analyze historic network failures to understand how technical designs impact human privacy.
 
 Rather than treating data breaches as abstract mishaps, this repository breaks down the exact algorithmic and architectural vulnerabilities that enabled them.
 
@@ -10,7 +10,8 @@ Rather than treating data breaches as abstract mishaps, this repository breaks d
 
 *   ` case-studies/yahoo-breach/`: A deep dive into the cryptographic failures and legacy system neglect behind the compromise of 3 billion accounts.
 *   ` case-studies/cambridge-analytica/`: A data-flow analysis of Facebook's Graph API v1.0, paired with a simulation script demonstrating nested relational data leaks.
-
+*   Active Technical Projects-
+*   **[The Ethical Data Sentinel](./ethical-data-sentinel/)**: A secure, command-line interface (CLI) application built in Python. It implements a secure **k-Anonymity** model to audit real-world password exposures via the Have I Been Pwned API and calculates an interactive Human Vulnerability Score.
 ---
 
 ## 🔍 Hub Overview
@@ -27,7 +28,10 @@ Rather than treating data breaches as abstract mishaps, this repository breaks d
 *   **Detailed Breakdown & Script:** Explore the data-flow diagrams and code in the [Cambridge Analytica Case Study](./yahoo-analysis/cambridge-analytica/)
 
 ---
-
+## ⚙️ Technical Skills Demonstrated Here
+*   **Languages & Frameworks:** Python, Markdown
+*   **Security Concepts:** Cryptographic Hashing (MD5 vs. bcrypt/SHA-1), Salt implementation, Rainbow Table mitigation, API Access Tokens, Node-level Authorization.
+*   **Methodologies:** Threat Modeling, Behavioral Privacy Auditing, k-Anonymity API Querying.
 ## 🚀 Research Objectives
 *   **Deconstruct** systemic security vulnerabilities down to the source code and network architectural levels.
 *   **Bridge the gap** between strict software engineering choices and their downstream societal, political, and ethical consequences.
