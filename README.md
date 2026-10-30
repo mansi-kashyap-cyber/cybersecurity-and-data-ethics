@@ -18,7 +18,8 @@ Rather than treating data breaches as abstract mishaps, this repository breaks d
 ### 1. The Yahoo Data Breaches (Cryptographic & Infrastructure Failure)
 *   **The Flaw:** Prolonged reliance on the structurally broken **MD5 hashing algorithm** without modern salting protocols, exposing user credentials to lightning-fast dictionary and rainbow table lookups.
 *   **The Paradigm Shift:** Security is a continuous deployment lifecycle, not a static implementation. Leaving legacy architecture unpatched is functionally identical to leaving it unsecured.
-*   **Detailed Post-Mortem:** Read the full analysis in the [`/case-studies/yahoo-breach/`](./case-studies/yahoo-breach/README.md) directory.
+*   **Detailed Post-Mortem:** Read the full analysis in the [Yahoo Data Breach Case Study](./yahoo-analysis/)
+ directory.
 
 ### 2. The Cambridge Analytica Scandal (API Design & Nested Relational Vulnerabilities)
 *   **The Flaw:** Facebook's **Graph API v1.0** data models treated authorization tokens as blanket passes to pull object graphs of un-consenting, secondary nodes (friends), turning user connections into data exploits.
