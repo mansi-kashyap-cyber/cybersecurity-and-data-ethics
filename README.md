@@ -24,8 +24,7 @@ Rather than treating data breaches as abstract mishaps, this repository breaks d
 ### 2. The Cambridge Analytica Scandal (API Design & Nested Relational Vulnerabilities)
 *   **The Flaw:** Facebook's **Graph API v1.0** data models treated authorization tokens as blanket passes to pull object graphs of un-consenting, secondary nodes (friends), turning user connections into data exploits.
 *   **The Paradigm Shift:** System architectures must assume human data is intrinsically interconnected. Data governance models must enforce zero-trust boundary isolation at the node level, rather than relying on single-user consent.
-*   **Detailed Breakdown & Script:** Explore the data-flow diagrams and code in the [`/case-studies/cambridge-analytica/`](./case-studies/cambridge-analytica/README.md) directory.
-
+*   **Detailed Breakdown & Script:** Explore the data-flow diagrams and code in the [Cambridge Analytica Case Study](./cambridge-analytica/)
 ---
 
 ## 🚀 Research Objectives
